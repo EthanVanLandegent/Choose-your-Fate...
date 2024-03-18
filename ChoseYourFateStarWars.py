@@ -12,9 +12,10 @@ def main():
         print("2. Serve the Galactic Empire")
         print("3. Become a Smuggler")
         print("4. Explore Tatooine")
-        print("5. Quit")
+        print("5. Become a Bounty Hunter")
+        print("6. Quit")
 
-        choice = input("Enter your choice (1-5): ")
+        choice = input("Enter your choice (1-6): ")
 
         if choice == '1':
             join_rebels()
@@ -25,10 +26,12 @@ def main():
         elif choice == '4':
             explore_tatooine()
         elif choice == '5':
+            become_bounty_hunter()
+        elif choice == '6':
             print("May the Force be with you! Goodbye.")
             break
         else:
-            print("Invalid choice. Please enter a number between 1 and 5.")
+            print("Invalid choice. Please enter a number between 1 and 6.")
 
 def join_rebels():
     print("\nYou have chosen to join the Rebel Alliance.")
@@ -136,6 +139,34 @@ def explore_tatooine():
             print("\nYou negotiate with Jawas and acquire useful droids for your adventures.")
         elif choice == '4':
             print("\nYou embark on a treasure hunt in the dangerous Jundland Wastes, facing Tusken Raiders.")
+        elif choice == '5':
+            print("Returning to main menu.")
+            break
+        else:
+            print("Invalid choice. Please enter a number between 1 and 5.")
+
+def become_bounty_hunter():
+    print("\nYou have chosen to become a Bounty Hunter.")
+    print("You will hunt down targets for credits and reputation.")
+
+    while True:
+        print("\nWhat will you do?")
+        print("1. Hunt a target for the Hutt Cartel")
+        print("2. Capture a high-value target for the Empire")
+        print("3. Track down a notorious smuggler for the Rebels")
+        print("4. Join a bounty hunter guild on Nar Shaddaa")
+        print("5. Return to main menu")
+
+        choice = input("Enter your choice (1-5): ")
+
+        if choice == '1':
+            print("\nYou successfully hunt a target for the Hutt Cartel, earning a handsome reward.")
+        elif choice == '2':
+            print("\nYou capture a high-value target for the Empire, gaining favor with Imperial authorities.")
+        elif choice == '3':
+            print("\nYou track down a notorious smuggler for the Rebels, becoming a thorn in the Empire's side.")
+        elif choice == '4':
+            print("\nYou join a bounty hunter guild on Nar Shaddaa, honing your skills alongside fellow hunters.")
         elif choice == '5':
             print("Returning to main menu.")
             break
