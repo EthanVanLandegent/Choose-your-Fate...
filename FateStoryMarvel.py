@@ -1,5 +1,5 @@
 def intro():
-    print("Welcome to the Marvel Superhero Adventure!")
+    print("\nWelcome to the Marvel Superhero Adventure!")
     print("In a world filled with chaos and danger, heroes rise to protect the innocent.")
     print("You find yourself in a bustling city, where supervillains threaten to destroy everything.")
     print("As the city's last hope, your journey begins now.")
