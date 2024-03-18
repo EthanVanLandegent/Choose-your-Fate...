@@ -13,9 +13,10 @@ def main():
         print("3. Become a Smuggler")
         print("4. Explore Tatooine")
         print("5. Become a Bounty Hunter")
-        print("6. Quit")
+        print("6. Visit the Jedi Temple")
+        print("7. Quit")
 
-        choice = input("Enter your choice (1-6): ")
+        choice = input("Enter your choice (1-7): ")
 
         if choice == '1':
             join_rebels()
@@ -28,10 +29,12 @@ def main():
         elif choice == '5':
             become_bounty_hunter()
         elif choice == '6':
+            visit_jedi_temple()
+        elif choice == '7':
             print("May the Force be with you! Goodbye.")
             break
         else:
-            print("Invalid choice. Please enter a number between 1 and 6.")
+            print("Invalid choice. Please enter a number between 1 and 7.")
 
 def join_rebels():
     print("\nYou have chosen to join the Rebel Alliance.")
@@ -43,9 +46,10 @@ def join_rebels():
         print("2. Rescue prisoners from a Star Destroyer")
         print("3. Plan an attack on the Death Star")
         print("4. Gather allies on Mon Cala")
-        print("5. Return to main menu")
+        print("5. Establish a Rebel outpost on Hoth")
+        print("6. Return to main menu")
 
-        choice = input("Enter your choice (1-5): ")
+        choice = input("Enter your choice (1-6): ")
 
         if choice == '1':
             print("\nYou successfully infiltrate the Imperial base and gather valuable intel.")
@@ -56,10 +60,12 @@ def join_rebels():
         elif choice == '4':
             print("\nYou travel to Mon Cala and convince its inhabitants to join the Rebel cause.")
         elif choice == '5':
+            print("\nYou establish a Rebel outpost on Hoth, preparing for future battles.")
+        elif choice == '6':
             print("Returning to main menu.")
             break
         else:
-            print("Invalid choice. Please enter a number between 1 and 5.")
+            print("Invalid choice. Please enter a number between 1 and 6.")
 
 def serve_empire():
     print("\nYou have chosen to serve the Galactic Empire.")
@@ -71,9 +77,10 @@ def serve_empire():
         print("2. Secure a rebel-controlled planet")
         print("3. Assist in building the Death Star")
         print("4. Crush a Rebel uprising on Lothal")
-        print("5. Return to main menu")
+        print("5. Conquer a neutral planet for the Empire")
+        print("6. Return to main menu")
 
-        choice = input("Enter your choice (1-5): ")
+        choice = input("Enter your choice (1-6): ")
 
         if choice == '1':
             print("\nYou track down Rebel spies and eliminate them, earning praise from Darth Vader.")
@@ -84,10 +91,12 @@ def serve_empire():
         elif choice == '4':
             print("\nYou lead Imperial forces to crush a Rebel uprising on Lothal, restoring order.")
         elif choice == '5':
+            print("\nYou conquer a neutral planet for the Empire, expanding its territories.")
+        elif choice == '6':
             print("Returning to main menu.")
             break
         else:
-            print("Invalid choice. Please enter a number between 1 and 5.")
+            print("Invalid choice. Please enter a number between 1 and 6.")
 
 def become_smuggler():
     print("\nYou have chosen to become a Smuggler.")
@@ -99,9 +108,10 @@ def become_smuggler():
         print("2. Make a deal with Jabba the Hutt")
         print("3. Pull off a heist on an Imperial cargo ship")
         print("4. Join a smuggling ring on Corellia")
-        print("5. Return to main menu")
+        print("5. Explore the black market on Coruscant")
+        print("6. Return to main menu")
 
-        choice = input("Enter your choice (1-5): ")
+        choice = input("Enter your choice (1-6): ")
 
         if choice == '1':
             print("\nYou successfully smuggle contraband past Imperial blockades, earning hefty profits.")
@@ -112,10 +122,12 @@ def become_smuggler():
         elif choice == '4':
             print("\nYou join a smuggling ring on Corellia, becoming a prominent figure in the underworld.")
         elif choice == '5':
+            print("\nYou explore the black market on Coruscant, finding rare and valuable items.")
+        elif choice == '6':
             print("Returning to main menu.")
             break
         else:
-            print("Invalid choice. Please enter a number between 1 and 5.")
+            print("Invalid choice. Please enter a number between 1 and 6.")
 
 def explore_tatooine():
     print("\nYou have chosen to explore Tatooine.")
@@ -127,9 +139,10 @@ def explore_tatooine():
         print("2. Race in a podrace")
         print("3. Negotiate with Jawas for droids")
         print("4. Hunt for treasure in the Jundland Wastes")
-        print("5. Return to main menu")
+        print("5. Visit the Lars Homestead")
+        print("6. Return to main menu")
 
-        choice = input("Enter your choice (1-5): ")
+        choice = input("Enter your choice (1-6): ")
 
         if choice == '1':
             print("\nYou visit the famous Mos Eisley Cantina and meet interesting characters.")
@@ -140,10 +153,12 @@ def explore_tatooine():
         elif choice == '4':
             print("\nYou embark on a treasure hunt in the dangerous Jundland Wastes, facing Tusken Raiders.")
         elif choice == '5':
+            print("\nYou visit the Lars Homestead and learn about the Skywalker family.")
+        elif choice == '6':
             print("Returning to main menu.")
             break
         else:
-            print("Invalid choice. Please enter a number between 1 and 5.")
+            print("Invalid choice. Please enter a number between 1 and 6.")
 
 def become_bounty_hunter():
     print("\nYou have chosen to become a Bounty Hunter.")
@@ -155,9 +170,10 @@ def become_bounty_hunter():
         print("2. Capture a high-value target for the Empire")
         print("3. Track down a notorious smuggler for the Rebels")
         print("4. Join a bounty hunter guild on Nar Shaddaa")
-        print("5. Return to main menu")
+        print("5. Visit the Pit of Carkoon")
+        print("6. Return to main menu")
 
-        choice = input("Enter your choice (1-5): ")
+        choice = input("Enter your choice (1-6): ")
 
         if choice == '1':
             print("\nYou successfully hunt a target for the Hutt Cartel, earning a handsome reward.")
@@ -167,6 +183,36 @@ def become_bounty_hunter():
             print("\nYou track down a notorious smuggler for the Rebels, becoming a thorn in the Empire's side.")
         elif choice == '4':
             print("\nYou join a bounty hunter guild on Nar Shaddaa, honing your skills alongside fellow hunters.")
+        elif choice == '5':
+            print("\nYou visit the Pit of Carkoon, where you witness the demise of Jabba the Hutt.")
+        elif choice == '6':
+            print("Returning to main menu.")
+            break
+        else:
+            print("Invalid choice. Please enter a number between 1 and 6.")
+
+def visit_jedi_temple():
+    print("\nYou have chosen to visit the Jedi Temple.")
+    print("You will explore the ancient temple and learn about the Force.")
+
+    while True:
+        print("\nWhat will you do?")
+        print("1. Meditate in the Jedi Archives")
+        print("2. Train with a Jedi Master")
+        print("3. Investigate the Sith holocrons")
+        print("4. Search for surviving Jedi artifacts")
+        print("5. Return to main menu")
+
+        choice = input("Enter your choice (1-5): ")
+
+        if choice == '1':
+            print("\nYou meditate in the Jedi Archives, gaining insights into the history of the Jedi Order.")
+        elif choice == '2':
+            print("\nYou train with a Jedi Master, honing your connection to the Force.")
+        elif choice == '3':
+            print("\nYou investigate the Sith holocrons, learning about the dark side of the Force.")
+        elif choice == '4':
+            print("\nYou search for surviving Jedi artifacts, preserving the legacy of the Jedi.")
         elif choice == '5':
             print("Returning to main menu.")
             break
