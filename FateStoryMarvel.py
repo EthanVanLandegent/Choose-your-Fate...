@@ -98,5 +98,88 @@ def chapter_3b():
         else:
             print("Invalid choice. Please enter 1 or 2.")
 
+def chapter_4a():
+    print("\nChapter 4a: The Alliance")
+    print("You realize that the villain you defeated was just a pawn in a larger scheme.")
+    print("To stop the mastermind behind the chaos, you must form an alliance with other heroes.")
+    print("What will you do?")
+
+    while True:
+        choice = input("Do you want to seek out other heroes for help (1) or confront the mastermind alone (2)?: ")
+        if choice == '1':
+            print("\nYou seek out other heroes, forming a powerful alliance to take down the mastermind.")
+            # End of the story
+            print("\nCongratulations! With the combined strength of heroes, you defeat the mastermind and save the world.")
+            break
+        elif choice == '2':
+            print("\nYou confront the mastermind alone, facing your greatest challenge yet.")
+            # End of the story
+            print("\nCongratulations! Your bravery and determination lead to victory, making you a legendary hero.")
+            break
+        else:
+            print("Invalid choice. Please enter 1 or 2.")
+
+def chapter_4b():
+    print("\nChapter 4b: The Redemption")
+    print("You encounter a former villain seeking redemption, torn between their past and a desire for a new beginning.")
+    print("What will you do?")
+
+    while True:
+        choice = input("Do you want to offer them a chance for redemption (1) or confront them as a threat (2)?: ")
+        if choice == '1':
+            print("\nYou offer them a chance for redemption, believing in the power of second chances.")
+            # End of the story
+            print("\nCongratulations! Your compassion leads to their redemption, and they become a valuable ally.")
+            break
+        elif choice == '2':
+            print("\nYou confront them as a threat, fearing their past actions may endanger others.")
+            # End of the story
+            print("\nCongratulations! Your vigilance protects the innocent, ensuring peace in the city.")
+            break
+        else:
+            print("Invalid choice. Please enter 1 or 2.")
+
+def chapter_5():
+    print("\nChapter 5: The Final Showdown")
+    print("The city faces its greatest threat yet as a powerful supervillain threatens to unleash chaos.")
+    print("As a seasoned hero, you are the city's last hope for salvation.")
+    print("What will you do?")
+
+    while True:
+        choice = input("Do you want to confront the villain head-on (1) or devise a strategy with other heroes (2)?: ")
+        if choice == '1':
+            print("\nYou confront the villain head-on, ready to face the ultimate challenge.")
+            # End of the story
+            print("\nCongratulations! Your courage and determination save the city from destruction, making you a true legend.")
+            break
+        elif choice == '2':
+            print("\nYou devise a strategy with other heroes, combining your strengths to defeat the villain.")
+            # End of the story
+            print("\nCongratulations! With teamwork and perseverance, you emerge victorious, ensuring peace and justice.")
+            break
+        else:
+            print("Invalid choice. Please enter 1 or 2.")
+
+def chapter_6():
+    print("\nChapter 6: The Legacy")
+    print("Your heroic deeds have inspired others, and the city honors you as its greatest protector.")
+    print("As you look back on your journey, you realize that being a hero is more than just having powers—it's about making a difference.")
+    print("What will you do now?")
+
+    while True:
+        choice = input("Do you want to continue protecting the city (1) or pass the mantle to a new generation (2)?: ")
+        if choice == '1':
+            print("\nYou continue protecting the city, ensuring its safety for generations to come.")
+            # End of the story
+            print("\nCongratulations! Your dedication and selflessness make you a true hero, beloved by all.")
+            break
+        elif choice == '2':
+            print("\nYou pass the mantle to a new generation, entrusting them with the responsibility of heroism.")
+            # End of the story
+            print("\nCongratulations! Your legacy lives on as a symbol of hope and inspiration for future heroes.")
+            break
+        else:
+            print("Invalid choice. Please enter 1 or 2.")
+
 # Start the story
 chapter_1()
