@@ -1,3 +1,7 @@
+# Programmer: Ethan VanLandegent
+# Date: 3.18.24
+# Program: Marvel fate story
+
 def intro():
     print("\nWelcome to the Marvel Superhero Adventure!")
     print("In a world filled with chaos and danger, heroes rise to protect the innocent.")
