@@ -6,6 +6,16 @@ def main():
     print("Welcome to the Star Wars Adventure Game!")
     print("You find yourself in a galaxy far, far away...")
 
+    choices = {
+        '1': join_rebels,
+        '2': serve_empire,
+        '3': become_smuggler,
+        '4': explore_tatooine,
+        '5': become_bounty_hunter,
+        '6': visit_jedi_temple,
+        '7': quit_game
+    }
+
     while True:
         print("\nWhat do you want to do?")
         print("1. Join the Rebel Alliance")
@@ -18,28 +28,42 @@ def main():
 
         choice = input("Enter your choice (1-7): ")
 
-        if choice == '1':
-            join_rebels()
-        elif choice == '2':
-            serve_empire()
-        elif choice == '3':
-            become_smuggler()
-        elif choice == '4':
-            explore_tatooine()
-        elif choice == '5':
-            become_bounty_hunter()
-        elif choice == '6':
-            visit_jedi_temple()
-        elif choice == '7':
-            print("May the Force be with you! Goodbye.")
-            break
+        if choice in choices:
+            choices[choice]()
         else:
             print("Invalid choice. Please enter a number between 1 and 7.")
 
 def join_rebels():
     print("\nYou have chosen to join the Rebel Alliance.")
     print("Your mission is to help overthrow the Galactic Empire.")
+    handle_rebel_choices()
 
+def serve_empire():
+    print("\nYou have chosen to serve the Galactic Empire.")
+    print("Your loyalty lies with Emperor Palpatine and Darth Vader.")
+    handle_empire_choices()
+
+def become_smuggler():
+    print("\nYou have chosen to become a Smuggler.")
+    print("You will navigate the galaxy's underworld, avoiding both the Empire and the Rebels.")
+    handle_smuggler_choices()
+
+def explore_tatooine():
+    print("\nYou have chosen to explore Tatooine.")
+    print("The desert planet is full of adventures and dangers.")
+    handle_tatooine_choices()
+
+def become_bounty_hunter():
+    print("\nYou have chosen to become a Bounty Hunter.")
+    print("You will hunt down targets for credits and reputation.")
+    handle_bounty_hunter_choices()
+
+def visit_jedi_temple():
+    print("\nYou have chosen to visit the Jedi Temple.")
+    print("You will explore the ancient temple and learn about the Force.")
+    handle_jedi_temple_choices()
+
+def handle_rebel_choices():
     while True:
         print("\nWhat will you do?")
         print("1. Infiltrate an Imperial base")
@@ -67,10 +91,7 @@ def join_rebels():
         else:
             print("Invalid choice. Please enter a number between 1 and 6.")
 
-def serve_empire():
-    print("\nYou have chosen to serve the Galactic Empire.")
-    print("Your loyalty lies with Emperor Palpatine and Darth Vader.")
-
+def handle_empire_choices():
     while True:
         print("\nWhat will you do?")
         print("1. Hunt down Rebel spies")
@@ -98,10 +119,7 @@ def serve_empire():
         else:
             print("Invalid choice. Please enter a number between 1 and 6.")
 
-def become_smuggler():
-    print("\nYou have chosen to become a Smuggler.")
-    print("You will navigate the galaxy's underworld, avoiding both the Empire and the Rebels.")
-
+def handle_smuggler_choices():
     while True:
         print("\nWhat will you do?")
         print("1. Smuggle contraband past Imperial blockades")
@@ -129,10 +147,7 @@ def become_smuggler():
         else:
             print("Invalid choice. Please enter a number between 1 and 6.")
 
-def explore_tatooine():
-    print("\nYou have chosen to explore Tatooine.")
-    print("The desert planet is full of adventures and dangers.")
-
+def handle_tatooine_choices():
     while True:
         print("\nWhat will you do?")
         print("1. Visit Mos Eisley Cantina")
@@ -160,10 +175,7 @@ def explore_tatooine():
         else:
             print("Invalid choice. Please enter a number between 1 and 6.")
 
-def become_bounty_hunter():
-    print("\nYou have chosen to become a Bounty Hunter.")
-    print("You will hunt down targets for credits and reputation.")
-
+def handle_bounty_hunter_choices():
     while True:
         print("\nWhat will you do?")
         print("1. Hunt a target for the Hutt Cartel")
@@ -191,10 +203,7 @@ def become_bounty_hunter():
         else:
             print("Invalid choice. Please enter a number between 1 and 6.")
 
-def visit_jedi_temple():
-    print("\nYou have chosen to visit the Jedi Temple.")
-    print("You will explore the ancient temple and learn about the Force.")
-
+def handle_jedi_temple_choices():
     while True:
         print("\nWhat will you do?")
         print("1. Meditate in the Jedi Archives")
@@ -218,6 +227,10 @@ def visit_jedi_temple():
             break
         else:
             print("Invalid choice. Please enter a number between 1 and 5.")
+
+def quit_game():
+    print("May the Force be with you! Goodbye.")
+    exit()
 
 if __name__ == "__main__":
     main()
