@@ -1,3 +1,10 @@
+def intro():
+    print("Welcome to the Marvel Superhero Adventure!")
+    print("In a world filled with chaos and danger, heroes rise to protect the innocent.")
+    print("You find yourself in a bustling city, where supervillains threaten to destroy everything.")
+    print("As the city's last hope, your journey begins now.")
+    print("Are you ready to embrace your destiny and become a legendary superhero?\n\n")
+
 def chapter_1():
     print("Chapter 1: The Superhero's Call")
     print("You find yourself in a bustling city, where chaos reigns as supervillains wreak havoc.")
@@ -182,4 +189,5 @@ def chapter_6():
             print("Invalid choice. Please enter 1 or 2.")
 
 # Start the story
+intro()
 chapter_1()
